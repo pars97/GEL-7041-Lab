@@ -49,14 +49,3 @@ for i in range(7):
     make_image(data,title='SLED 20C',axe_x=axe_x,axe_y=axe_y,label = str(20*i)+'mA')
 plt.show()
 
-
-
-""" # Diode DFB - 10 Degrés
-for i in range(9):
-    path = "Labo1/images Labo 1/DFB/DFB_10deg_"+str(5*i)+"ma.txt"
-    #data["data{0}".format(5*i)] = txt2data(path)
-    data = txt2data(path)
-    make_image(data,title='DFB 10C',axe_x=axe_x,axe_y=axe_y,label = str(5*i)+'mA')
-plt.show() """
-
-
