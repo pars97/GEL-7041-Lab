@@ -1,5 +1,5 @@
 # Prend un array de data et fait une image#
-#Auteur : Philippe Arsenault
+# Auteur : Philippe Arsenault
 # Fonction solo qui prend une array de data et qui fait une image
 
 import matplotlib.pyplot as plt
@@ -21,6 +21,7 @@ def make_image(data, title,axe_x = [1500,1600,'titre de l\'axe x'], axe_y = [-10
         y_values.append(data[i][1])
 
     plt.title(title)
+    plt.axis([axe_x[0],axe_x[1],axe_y[0],axe_y[1]])
     plt.plot(x_values,y_values, linewidth = 3, color = new_color(), label = label)
     plt.xlabel(axe_x[2], fontsize=16)
     plt.ylabel(axe_y[2], fontsize=16)
