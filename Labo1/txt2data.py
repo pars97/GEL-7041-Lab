@@ -2,7 +2,7 @@
 #Auteur : Philippe Arsenault
 # Fonction solo qui prend un path et qui retourne les données dans un array
 
-def get_txt_data_lab1(file_path):
+def get_data_txt(file_path):
 
     # Initialize a list to hold the data
     data = []
