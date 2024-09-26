@@ -2,3 +2,5 @@
 .venv/Lib/site-packages/
 
 .venv/
+
+Labo1/__pycache__/
