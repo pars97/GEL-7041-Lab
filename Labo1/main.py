@@ -16,11 +16,11 @@ data_y = []
 
 
 #Variable de sortie CHANGER ICI POUR QUE LE CODE SORTE QUELQUE CHOSE
-image = False
-puissance_totale = False
+image = True
+puissance_totale = True
 lambda_centre = True
-fwhm_DFB = False
-slsr = False
+fwhm_DFB = True
+slsr = True
 fsr = True
 
 
