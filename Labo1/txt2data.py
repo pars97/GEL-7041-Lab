@@ -5,7 +5,8 @@
 def txt2data(file_path):
 
     # Initialize a list to hold the data
-    data = []
+    data_x = []
+    data_y = []
     error_counter =0
 
     # Open the file and read its contents
@@ -18,10 +19,11 @@ def txt2data(file_path):
                 try:
                     value1 = float(parts[0].replace(',', '.'))  # Convert to float, replace comma with dot
                     value2 = float(parts[1].replace(',', '.'))  # Convert to float, replace comma with dot
-                    data.append((value1, value2))  # Append the tuple to the list
+                    data_x.append(value1)  # Append the tuple to the list
+                    data_y.append(value2)
                 except ValueError:
                     #print(f"Error converting line: {line.strip()}")
                     error_counter += 1
     # Now `data` contains the processed values
     # data a deux dimensions, data[0][0] va chercher la première valeur x et data[0][1] va chercher sa valeur y correspondante
-    return data
+    return data_x, data_y
